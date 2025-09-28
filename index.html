@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDEN SYSTEMS - AI Agents & Solutions</title>
+  <title>EDEN SYSTEMS - Agentic AI Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Base */
+    /* Base Styles */
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: 'Poppins', sans-serif; background:#0B0F23; color:#fff; scroll-behavior: smooth; }
     a { text-decoration:none; color:inherit; }
-    
+
     /* Navigation */
     nav { position: fixed; width:100%; top:0; left:0; background:#0B0F23; display:flex; justify-content:space-between; align-items:center; padding:20px 50px; z-index:1000; }
     nav .logo { font-size:24px; font-weight:700; color:#00FFF0; }
@@ -18,40 +18,47 @@
     nav ul li { cursor:pointer; transition:0.3s; }
     nav ul li:hover { color:#00FFF0; }
 
-    /* Hero */
+    /* Hero Section */
     .hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background: linear-gradient(135deg,#0B0F23,#1B1F38); padding:0 20px; }
-    .hero h1 { font-size:3rem; color:#00FFF0; margin-bottom:20px; }
-    .hero p { font-size:1.2rem; margin-bottom:30px; color:#ccc; max-width:600px; }
+    .hero h1 { font-size:3rem; color:#00FFF0; margin-bottom:20px; line-height:1.2; }
+    .hero p { font-size:1.2rem; margin-bottom:30px; color:#ccc; max-width:700px; }
     .hero button { padding:15px 35px; font-size:1rem; background:#00FFF0; color:#0B0F23; border:none; border-radius:8px; cursor:pointer; transition:0.3s; }
     .hero button:hover { background:#00d6cc; }
 
     /* Sections */
     section { padding:100px 50px; }
-    section h2 { font-size:2rem; color:#00FFF0; margin-bottom:30px; text-align:center; }
-    section p { max-width:800px; margin:0 auto 40px; text-align:center; color:#ccc; }
+    section h2 { font-size:2.2rem; color:#00FFF0; margin-bottom:30px; text-align:center; }
+    section p { max-width:900px; margin:0 auto 40px; text-align:center; color:#ccc; line-height:1.6; }
 
     /* About */
     .about { background:#0B0F23; }
+    .about p { font-size:1.1rem; }
 
-    /* Services & Products */
+    /* Services */
     .cards-container { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .card { background:#1B1F38; padding:30px; border-radius:12px; width:250px; text-align:center; transition:0.3s; }
+    .card { background:#1B1F38; padding:30px; border-radius:12px; width:280px; text-align:center; transition:0.3s; }
     .card:hover { transform: translateY(-10px); box-shadow:0 10px 20px rgba(0,255,240,0.3); }
     .card h3 { margin-bottom:15px; color:#00FFF0; }
-    .card p { color:#ccc; font-size:0.95rem; }
+    .card p { color:#ccc; font-size:1rem; }
 
     /* Process */
     .process { background:#0B0F23; display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .step { background:#1B1F38; padding:20px; border-radius:12px; width:200px; text-align:center; transition:0.3s; }
-    .step h4 { color:#00FFF0; margin-bottom:10px; }
-    .step p { color:#ccc; font-size:0.9rem; }
+    .step { background:#1B1F38; padding:25px; border-radius:12px; width:220px; text-align:center; transition:0.3s; }
+    .step h4 { color:#00FFF0; margin-bottom:15px; }
+    .step p { color:#ccc; font-size:0.95rem; }
+
+    /* CTA Banner */
+    .cta-banner { background:#00FFF0; color:#0B0F23; text-align:center; padding:40px 20px; margin:50px 0; border-radius:12px; }
+    .cta-banner h3 { font-size:2rem; margin-bottom:15px; }
+    .cta-banner a { display:inline-block; padding:12px 30px; background:#0B0F23; color:#00FFF0; border-radius:8px; font-weight:600; transition:0.3s; }
+    .cta-banner a:hover { background:#111432; }
 
     /* Contact */
     .contact { background:#111432; text-align:center; }
     .contact p { margin-bottom:10px; }
 
     /* Footer */
-    footer { background:#0B0F23; text-align:center; padding:20px; color:#888; }
+    footer { background:#0B0F23; text-align:center; padding:25px; color:#888; font-size:0.9rem; }
 
     /* Responsive */
     @media(max-width:768px){
@@ -69,22 +76,22 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#products">Products</a></li>
-      <li><a href="#process">How It Works</a></li>
+      <li><a href="#process">How We Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <h1>Building the Future of Agentic AI </h1>
-    <p>Custom AI systems for finance ,cyber, LLM and software development.</p>
-    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Talk to Us</button>
+    <h1>Agentic AI Solutions for Finance, Cybersecurity & Enterprise Software</h1>
+    <p>We create intelligent AI agents that automate, optimize, and transform operations, enabling businesses to scale smarter, faster, and safer.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
   </section>
 
   <!-- About Section -->
   <section class="about" id="about">
     <h2>About EDEN SYSTEMS</h2>
-    <p>EDEN SYSTEMS is a fast-growing AI startup delivering AI systems for LLM & Software development and Cyber & Finance . We empower companies to automate, optimize, and innovate with AI, offering both products and tailored services.</p>
+    <p>EDEN SYSTEMS is a forward-thinking AI startup specializing in agentic systems for Finance, Cybersecurity, and Enterprise Software. Our mission is to empower businesses to automate complex workflows, gain actionable insights, and innovate with confidence.</p>
   </section>
 
   <!-- Services Section -->
@@ -93,77 +100,71 @@
     <div class="cards-container">
       <div class="card">
         <h3>AI Agent Consulting</h3>
-        <p>Design custom AI agents tailored to your business processes.</p>
+        <p>We design AI agents tailored to your business challenges, enhancing productivity and decision-making.</p>
       </div>
       <div class="card">
         <h3>LLM Integration</h3>
-        <p>Integrate any LLM seamlessly for maximum flexibility and performance.</p>
+        <p>Seamlessly integrate large language models to improve communication, analysis, and automation.</p>
       </div>
       <div class="card">
         <h3>Automation Systems</h3>
-        <p>Automate tasks, analytics, and decision-making with AI agents.</p>
+        <p>Automate repetitive and critical tasks across industries to save time, reduce errors, and boost efficiency.</p>
       </div>
       <div class="card">
         <h3>Support & Optimization</h3>
-        <p>Ensure your AI workflows run smoothly and scale effectively.</p>
+        <p>Ensure your AI systems run smoothly, scale effectively, and deliver measurable impact.</p>
       </div>
     </div>
   </section>
 
+  <!-- CTA Banner for Products -->
   <!-- Products Section -->
-  <section id="products">
-    <h2>Our Products</h2>
-    <P>ALL these product can be customized for company needs  and ecosystem</P>
-    <div class="cards-container">
-      <div class="card">
-        <h3>PENZER</h3>
-        <p>AI system For Pentesting </p>
-      </div>
-      <div class="card">
-        <h3>FIONA</h3>
-        <p>AI system for data science </p>
-      </div>
-      <div class="card">
-        <h3>IREIN</h3>
-        <p>AI system for LLM development </p>
-      </div>
-      
-  </section>
+<section id="products">
+  <h2>Our Products</h2>
+  <p>We build agentic AI systems that solve real business problems across Finance, Cybersecurity, and Enterprise Software. Stay updated on our latest products and launches on our X page.</p>
+  <div class="cards-container">
+    <div class="card">
+      <h3>AI Products & Launches</h3>
+      <p>Check out our latest AI products and updates for businesses. Visit our X page for announcements.</p>
+      <a href="https://x.com/SystemsEden?t=Vc7QvaiF4LvTil58uHRsqg&s=09" target="_blank" style="color:#00FFF0; display:inline-block; margin-top:10px;">Visit X Page</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Process Section -->
   <section class="process" id="process">
     <h2>How We Work</h2>
     <div class="step">
       <h4>Step 1</h4>
-      <p>Discover your company needs and agent requirements.</p>
+      <p>Understand your business objectives and identify AI opportunities.</p>
     </div>
     <div class="step">
       <h4>Step 2</h4>
-      <p>Design your custom AI ecosystem.</p>
+      <p>Design AI solutions tailored to your industry and processes.</p>
     </div>
     <div class="step">
       <h4>Step 3</h4>
-      <p>Build the agentic sytems tailored to requirments and ecosystem.</p>
+      <p>Develop agentic systems to optimize workflows and decision-making.</p>
     </div>
     <div class="step">
       <h4>Step 4</h4>
-      <p>Scale and optimize as your business grows.</p>
+      <p>Scale, monitor, and optimize AI solutions for maximum impact.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Let's innovate together. Reach out to start building your AI ecosystem.</p>
-    <p>Email: <a href="mailto:areus7727@gmail.com">areus7727@gmail.com</a></p>
+    <p>Partner with EDEN SYSTEMS to transform your business with intelligent AI agents.</p>
+    <p>Email: <a href="mailto:systemseden0@gmail.com">systemseden0@gmail.com</a></p>
     <p>Phone: +923333554858</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/huzaifa-ashraf-0428a927b" target="_blank">huzaifa-ashraf-0428a927b</a></p>
-    <p>GitHub: <a href="https://github.com/HuzaifaAshraf13" target="_blank">HuzaifaAshraf13</a></p>
+    <p>Follow us on X: <a href="https://x.com/SystemsEden?t=Vc7QvaiF4LvTil58uHRsqg&s=09" target="_blank">HuzaifaAshraf13</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    © 2025 EDEN SYSTEMS | Email: <a href="mailto:areus7727@gmail.com">areus7727@gmail.com</a>
+    © 2025 EDEN SYSTEMS | Email: <a href="mailto:systemseden0@gmail.com">systemseden0@gmail.com</a> | Follow us on X for updates
   </footer>
 
 </body>
